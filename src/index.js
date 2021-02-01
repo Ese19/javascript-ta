@@ -1,6 +1,8 @@
 // complete the function
 function palindrom(str) {
   // code goes here
+  str = str.toLowerCase().replace(/[\W_]/g, "");
+  return (str.split('').reverse().join('') === str);
 }
 
 function solution(arg) {
